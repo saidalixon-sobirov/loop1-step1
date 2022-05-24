@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #85a5d4;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 100px auto;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px #647ca5a2, 0 30px 50px #647ca596;
+}
+
+.item {
+  vertical-align: top;
+  float: left;
+  width: calc(100% / 3); /* 33.3% */
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #5673d5;
+  transition: background 0.2s ease-in-out;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.item:hover {
+  background: #f6f6f6;
+}
+
+img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.item-name {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.item-description {
+  font-size: 13px;
+  color: #a7a7a7;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+span {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+span sup {
+  font-size: 14px;
+  font-weight: 700;
+}
